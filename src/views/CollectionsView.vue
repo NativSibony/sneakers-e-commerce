@@ -1,6 +1,6 @@
 <template>
-  <section class="flex justify-center items-center w-full max-w-[1440px] p-4">
-    <div class="flex py-10">
+  <section class="flex justify-center items-center w-full max-w-[1440px] md:p-4">
+    <div class="flex md:py-10 gap-y-10 flex-wrap md:flex-nowrap">
       <ProductShow />
       <ProductOverview />
     </div>

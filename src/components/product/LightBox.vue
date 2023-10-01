@@ -6,7 +6,7 @@
   >
     <div class="flex flex-col justify-center items-center gap-8 w-full h-full max-w-[800px]">
       <button class="self-end mr-24 fill-white font-bold text-xl hover:fill-orange" @click="$emit('close')">
-        <Close />
+        <Icon name="icon-close" width="20" height="20" />
       </button>
       <div class="flex justify-center items-center w-full">
         <button
@@ -40,9 +40,9 @@
 <script setup>
 import Next from '@/assets/images/icon-next.svg'
 import Prev from '@/assets/images/icon-previous.svg'
-import Close from '@/assets/images/icon-close.svg'
 
 import { useSlideShow } from '@/composables/useSlideShow'
+import Icon from '../shared/Icon.vue'
 const { productImage, selectImage, thumbnailImage, thumbnailImages, prev, next } = useSlideShow()
 selectImage(parentIndex)
 

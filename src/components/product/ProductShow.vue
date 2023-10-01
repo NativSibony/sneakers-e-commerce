@@ -1,8 +1,8 @@
 <template>
   <div class="flex grow flex-col justify-center items-center w-full gap-10">
-    <div class="flex flex-col justify-center items-center gap-10 w-full max-w-[500px]">
-      <img :src="productImage" class="rounded-3xl cursor-pointer hover:opacity-80" @click="show = true" />
-      <div class="flex justify-between w-full">
+    <div class="flex flex-col justify-center items-center gap-10 w-full md:max-w-[500px]">
+      <img :src="productImage" class="md:rounded-3xl md:cursor-pointer md:hover:opacity-80 md:w-auto" @click="showModal" />
+      <div class="hidden md:flex justify-between w-full">
         <img
           v-for="(thumbnail, i) in thumbnailImages"
           :key="thumbnail"
@@ -28,4 +28,7 @@ const { index, productImage, selectImage, thumbnailImage, thumbnailImages } = us
 defineEmits(['set-thumbnail-image'])
 
 const close = () => (show.value = false)
+const showModal = () => {
+  if (window.innerWidth > 767) show.value = true
+}
 </script>

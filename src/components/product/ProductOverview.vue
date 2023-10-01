@@ -1,6 +1,6 @@
 <template>
   <div class="flex justify-center grow flex-col text-left w-full">
-    <div class="px-10 md:px-14 lg:px-20">
+    <div class="px-10 md:pl-14 md:pr-0 lg:px-20">
       <p class="font-bold uppercase text-sm text-orange mb-6">Sneaker Company</p>
       <p class="font-bold text-5xl mb-10">Fall Limited Edition Sneakers</p>
       <p class="text-dark-grayish-blue mb-10">

@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex items-center justify-center gap-8 text-dark-grayish-blue">
+  <nav class="flex items-center justify-center gap-4 lg:gap-8 text-dark-grayish-blue">
     <RouterLink
       v-for="item in navItems"
       :key="`nav-item-${item.title}`"
