@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import { computed, defineAsyncComponent, onMounted, ref } from 'vue'
+import { computed, defineAsyncComponent, ref } from 'vue'
 
 const props = defineProps({
   name: {
@@ -26,9 +26,5 @@ const icon = computed(() => {
     else svgWidth.value = props.width
     return svg
   })
-})
-
-onMounted(() => {
-  console.log(props.width, svgWidth.value, props.name)
 })
 </script>
