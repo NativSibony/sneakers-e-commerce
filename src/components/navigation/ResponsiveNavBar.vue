@@ -1,10 +1,14 @@
 <template>
   <div class="py-10">
     <Icon name="icon-menu" class="fill-dark-grayish-blue cursor-pointer mt-[0.2rem]" @click="open = true" />
-
+  </div>
+  <div
+    class="fixed top-0 left-0 bg-black bg-opacity-50 transition-colors duration-500 w-full h-full"
+    :class="{ 'opacity-100': open, 'opacity-0': !open }"
+  >
     <div
-      class="absolute top-0 left-0 bg-white h-full flex flex-col transition-all duration-500 overflow-hidden"
-      :class="{ 'w-full': open, 'w-0': !open }"
+      class="absolute top-0 left-0 bg-white h-full flex flex-col overflow-hidden transition-[width] duration-500"
+      :class="{ 'w-[70%]': open, 'w-0': !open }"
     >
       <Icon
         name="icon-close"

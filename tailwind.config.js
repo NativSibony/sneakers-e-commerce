@@ -10,6 +10,9 @@ export default {
         'dark-grayish-blue': 'hsl(219, 9%, 45%)',
         'grayish-blue': 'hsl(220, 14%, 75%)',
         'light-grayish-blue': 'hsl(223, 64%, 98%)'
+      },
+      boxShadow: {
+        card: 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px'
       }
     }
   },
